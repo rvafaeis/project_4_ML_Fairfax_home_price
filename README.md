@@ -4,7 +4,6 @@ The aim of this project was to gather and analyze data from local home sold pric
 
 ### ETL
 First, the data was obtained from the MLS website. The data from 2019-2023 was downloaded as .csv files and used the Python library Pandas to edit and clean the data. The interquartile range (IQR) was also obtained and used to remove outliers. Utilizing the IQR to remove outliers greatly improved our Neural Network. These box plots visualize our dataset range before and after using the IQR.
-![image](https://github.com/rvafaeis/project_4_ML_Fairfax_home_price/assets/120426753/0c78d072-34d5-4221-bb8f-ab65165432a0)
 ![image](https://github.com/rvafaeis/project_4_ML_Fairfax_home_price/assets/120426753/05a5fe0b-9893-493c-b741-49a2bd57ecf8)
 
 
