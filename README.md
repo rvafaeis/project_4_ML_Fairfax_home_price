@@ -15,6 +15,8 @@ The data was split into test and train variables using sklearn to begin our pred
 Before constructing and teseting our model, a correlation function was used to identify which variables are mostly correlated to the home sold price. The image below shows the correlation heat map.
 ![image](https://github.com/rvafaeis/project_4_ML_Fairfax_home_price/assets/120426753/999610c7-53b9-4306-8f71-dffce88c4c02)
 
-Multiple models, activation functions, and optimizers were teseted and after trial and error, the sequential model was the best performing model. The activation function was determined to be best as rectified linear unit (Relu) for each of the three layers in our model. Our outer layer used a linear activation function and the best optimizer was determined to be rmsprop.
+Multiple models, activation functions, and optimizers were teseted and after trial and error, the sequential model was the best performing model. The activation function was determined to be best as rectified linear unit (Relu) for each of the three layers in our model. Our outer layer used a linear activation function and the best optimizer was determined to be rmsprop. The table shows how each of the models performed using accuracy metrics including r-squared values.
+![image](https://github.com/rvafaeis/project_4_ML_Fairfax_home_price/assets/120426753/37f7888b-f9f2-4c34-a637-c790b5582565)
+
 
 https://public.tableau.com/app/profile/raheleh.vafaei.saadi/viz/FairfaxVASFHomePrice/Sheet7?publish=yes
