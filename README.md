@@ -8,7 +8,7 @@ First, the data was obtained from the MLS website. The data from 2019-2023 was d
 
 A geoapify API was utilized to add latitude and longitude to our data. Lastly, the get_dummies function from Pandas was implemented to indicate our categorical data using numbers to prepare our dataset for our machine learning model.
 
-#### Neural Network
+### Neural Network
 The aim of our neural network is to accurately predict house prices in Fairfax County. To do that, a regression neural network model was constructed. Identifying the target variable as the home sold price and the rest of the variables as features. A StandardScaler was used to reduce the overall likelihood that outliers, variables of different units, or skewed distributions will have a negative impact on a model’s performance.
 The data was split into test and train variables using sklearn to begin our prediction model. 
 
