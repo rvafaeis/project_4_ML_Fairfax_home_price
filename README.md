@@ -1,10 +1,14 @@
-## ML Fairfax County VA Home Prices
+## Machine Learning model for  Fairfax County, VA, Home Sale Prices
 ![image](https://github.com/rvafaeis/project_4_ML_Fairfax_home_price/assets/120426753/6b52a0f1-8ba1-4726-8bb6-0d023d43a1bc)
-The aim of this project was to gather and analyze data from local single family home sold prices in Fairfax County, VA and use that data to construct machine learning model to accurately predict home prices.
+The aim of this project was to gather and analyze data from local single family home sold prices in Fairfax County, VA and use that data to construct machine learning model to accurately predict home prices in fairfax county.
 
 ### Exploratory Data Analysis (EDA)
-First, the data was obtained from the MLS website. The data from 2019-2023 was downloaded as .csv files and used the Python library, Pandas explore, and clean the data. The interquartile range (IQR) was calculated from the statistics summary of the cleaned data to determine the potential outliers. Based on the IQR, the necessary rows of data were removed so that there won't be data imbalance.  Utilizing the IQR to remove outliers greatly improved our Neural Network model performance. These box plots visualize our dataset range before and after using the IQR.
-![image](https://github.com/rvafaeis/project_4_ML_Fairfax_home_price/assets/120426753/05a5fe0b-9893-493c-b741-49a2bd57ecf8)
+First, the data was obtained from the MLS website. The data from 2019-2023 was downloaded as .csv files and used the Python library, Pandas to merge (concatenate), explore, and clean the data. The statistical summary of the cleaned data was ploted using seaborn library heatmap function:
+
+![image](https://github.com/rvafaeis/project_4_ML_Fairfax_home_price/assets/120426753/05a5fe0b-9893-493c-b741-49a2bd57ecf8) 
+
+The interquartile range (IQR) was calculated from the statistics summary of the cleaned data to determine the potential outliers. Based on the IQR, the necessary rows of data were removed so that there won't be data imbalance.  Utilizing the IQR to remove outliers greatly improved our Neural Network model performance. These box plots show sold price outliers (left plot) and after removing the outliers (right plot).
+
 
 A geoapify API was utilized to obtain (convert) the street addresses of the houses to its corresponding Latitude and Longitude locations.  Lastly, the get_dummies function from Pandas was implemented to convert categorical records ( in this case the unique City names) to labels for the ML algorithm.  indicate our categorical data using numbers to prepare our dataset for our machine learning model
 
